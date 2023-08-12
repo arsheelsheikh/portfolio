@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Box, Heading } from '@chakra-ui/react';
+import { Container, Box, Heading, Image } from '@chakra-ui/react';
 
 const Page = () => {
     return(
@@ -14,6 +14,22 @@ const Page = () => {
             Arsheel Sheikh
           </Heading>
           <p> Web Developer | App Developer | UI/UX Designer</p>
+        </Box>
+        <Box
+          flexShrink={0}
+          mt={{ base: 4, md: 0 }}
+          ml={{ md: 6 }}
+          textAlign="center"
+        >
+          <Image borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            maxWidth="100px"
+            display="inline-block"
+            borderRadius="full"
+            src="/images/arsheelnft.jpeg"
+            alt="Profile Image"
+          />
         </Box>
         </Box>
       </Container>  
