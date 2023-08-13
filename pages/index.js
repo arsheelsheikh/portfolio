@@ -7,7 +7,8 @@ import {
   useColorModeValue 
 } from '@chakra-ui/react';
 import Section from '../components/section'
-import Head from 'next/head';
+import Paragraph from '../components/paragraph'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
     return(
@@ -45,8 +46,18 @@ const Page = () => {
           <Heading as="h3" variant="section-tile">
             Work
           </Heading>
-          <p>Paragraph</p>
+          <Paragraph> Arsheel Sheikh, an ETC undergrad deeply passionate about Software Development, Developer Relations, UI/UX Design, and Product Management.As a proactive advocate for open-source collaboration, participated in hackathons, contributed to projects, and shared insights through speaking engagements and write-ups.</Paragraph>
         </Section>
+
+        <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph>
+          Football, Photography, Art, Music.
+        </Paragraph>
+      </Section>
+
       </Container>  
     ) 
 };
